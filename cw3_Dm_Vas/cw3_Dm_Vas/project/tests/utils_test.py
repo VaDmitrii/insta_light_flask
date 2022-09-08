@@ -1,6 +1,5 @@
-from cw3_Dm_Vas.project.utils import *
-from cw3_Dm_Vas.project.comments_utils import *
-from cw3_Dm_Vas.project.run import app
+from cw3_Dm_Vas.cw3_Dm_Vas.project.utils import *
+from cw3_Dm_Vas.cw3_Dm_Vas.project.comments_utils import *
 
 posts_keys = [key for key in get_all_posts()[0].keys()]
 comments_keys = [key for key in get_all_comments()[0].keys()]

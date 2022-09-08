@@ -1,6 +1,6 @@
 import json
 
-from cw3_Dm_Vas.project.utils import get_all_posts
+from cw3_Dm_Vas.cw3_Dm_Vas.project.utils import get_all_posts
 
 
 def get_all_bookmarks():

@@ -2,9 +2,9 @@ import logging
 
 from flask import Blueprint, request, render_template, jsonify
 
-from cw3_Dm_Vas.project.utils import *
-from cw3_Dm_Vas.project.comments_utils import get_comments_by_post_id
-from cw3_Dm_Vas.project.bookmarks_utils import get_all_bookmarks
+from cw3_Dm_Vas.cw3_Dm_Vas.project.utils import *
+from cw3_Dm_Vas.cw3_Dm_Vas.project.comments_utils import get_comments_by_post_id
+from cw3_Dm_Vas.cw3_Dm_Vas.project.bookmarks_utils import get_all_bookmarks
 
 posts_blueprint = Blueprint('posts_blueprint', __name__, template_folder='templates')
 

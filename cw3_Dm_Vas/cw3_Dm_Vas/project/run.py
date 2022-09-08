@@ -1,7 +1,7 @@
 from flask import Flask
 
-from cw3_Dm_Vas.project.posts_views import posts_blueprint
-from cw3_Dm_Vas.project.bookmarks_views import boookmarks_blueprint
+from cw3_Dm_Vas.cw3_Dm_Vas.project.posts_views import posts_blueprint
+from cw3_Dm_Vas.cw3_Dm_Vas.project.bookmarks_views import boookmarks_blueprint
 
 app = Flask(__name__)
 
