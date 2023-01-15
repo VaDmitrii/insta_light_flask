@@ -22,5 +22,5 @@ pip install -r requirements.txt
 ```
 - Run API
 ```
-flask run
+flask --app run run
 ```
