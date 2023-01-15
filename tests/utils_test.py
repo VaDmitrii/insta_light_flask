@@ -1,5 +1,5 @@
-from ..utils import *
-from ..comments_utils import *
+from comments_utils import *
+from utils import get_post_by_pk, get_posts_by_user, search_for_posts
 
 posts_keys = [key for key in get_all_posts()[0].keys()]
 comments_keys = [key for key in get_all_comments()[0].keys()]

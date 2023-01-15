@@ -1,6 +1,6 @@
 import json
 
-from coursework3_Dm_Vas.project.utils import get_all_posts
+from utils import get_all_posts
 
 
 def get_all_bookmarks():

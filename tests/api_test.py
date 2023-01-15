@@ -1,4 +1,4 @@
-from ..utils import *
+from utils import *
 
 posts_keys = [key for key in get_all_posts()[0].keys()]
 

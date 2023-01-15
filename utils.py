@@ -2,14 +2,14 @@ import json
 
 
 def get_all_posts():
-    """Возвращает все посты"""
+    """Returns all posts"""
 
     with open('data/posts.json', 'r', encoding='utf-8') as file:
         return json.loads(file.read())
 
 
 def get_posts_by_user(user_name):
-    """Возвращает список постов запрошенного пользователя, если он существует"""
+    """Get all posts of user by user_name, if such user exists"""
 
     data = get_all_posts()
     authors = [post['poster_name'] for post in data]
@@ -27,10 +27,10 @@ def get_posts_by_user(user_name):
         return posts
 
 
-def search_for_posts(query):
-    """Возвращает все посты по ключевому слову"""
+def search_for_posts(query: str):
+    """:returns all the posts by keyword"""
 
-    posts_list = get_all_posts()
+    posts_list: list = get_all_posts()
     posts = []
     for post in posts_list:
         if query.lower() in post['content'].lower().strip():
@@ -38,10 +38,10 @@ def search_for_posts(query):
     return posts
 
 
-def get_post_by_pk(pk):
+def get_post_by_pk(pk: str):
     """Возвращает пост по номеру"""
 
-    post_list = get_all_posts()
+    post_list: list = get_all_posts()
     for post in post_list:
         if pk == post['pk']:
             return post

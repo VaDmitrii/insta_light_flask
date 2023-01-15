@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect
 
-from coursework3_Dm_Vas.project.bookmarks_utils import *
+from bookmarks_utils import *
 
 boookmarks_blueprint = Blueprint('bookmarks_blueprint', __name__, template_folder='templates')
 
